@@ -4,5 +4,59 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700 !important;
+  font-size: 35px !important;
+}
+
+p {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  row-gap: 35px;
+}
+
+.right {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.tengah {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px;
+}
+
+.learn-btn {
+  border: none;
+  background-color: #141414;
+  color: #fafafa;
+  padding: 10px 20px 10px 20px;
+  border-radius: 15px;
+}
+
+.pictures {
+  height: 300px;
+  width: 100%;
+  background-image: url("/images/image-hero-mobile.png");
+  background-size: contain;
 }
 /*# sourceMappingURL=main.css.map */

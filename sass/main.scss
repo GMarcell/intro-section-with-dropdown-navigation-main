@@ -7,4 +7,51 @@ $Almost-Black: hsl(0, 0%, 8%);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700 !important;
+    font-size: 35px !important;
+}
+
+p{
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 35px;
+}
+
+.right{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.tengah{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.learn-btn{
+    border: none;
+    background-color: $Almost-Black;
+    color: $Almost-White;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+}
+
+.pictures{
+    height: 300px;
+    width: 100%;
+    background-image: url("/images/image-hero-mobile.png");
+    background-size: contain;
 }
