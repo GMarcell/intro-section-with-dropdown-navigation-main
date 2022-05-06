@@ -10,19 +10,22 @@ $Almost-Black: hsl(0, 0%, 8%);
     font-family: 'Epilogue', sans-serif;
 }
 
-h1{
-    text-align: center;
-    font-weight: 700 !important;
-    font-size: 35px !important;
+.left{
+    h1{
+        text-align: center;
+        font-weight: 700 !important;
+        font-size: 35px !important;
+    }
+    
+    p{
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: 500;
+        font-size: 18px;
+    }
 }
 
-p{
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-weight: 500;
-    font-size: 18px;
-}
 
 .grid{
     display: grid;
@@ -54,4 +57,62 @@ p{
     width: 100%;
     background-image: url("/images/image-hero-mobile.png");
     background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1440px) {
+    nav{
+        height: 70px;
+        .menu{
+            margin-left: 25px;
+        }
+        .button{
+            text-align: right;
+            padding-left: 650px;
+        }
+    }
+    .grid{
+        grid-template-columns: 55% 45%;
+        padding: 30px 60px 60px 60px;
+    }
+    .left{
+        padding-top: 100px;
+        padding-left: 70px;
+        padding-right: 50px;
+        h1{
+            text-align: left;
+            font-size: 85px !important;
+            color: $Almost-Black;
+        }
+        p{
+            text-align: left;
+            padding: 0;
+            color: $Medium-Gray;
+            font-size: 18px;
+            padding-right: 50px;
+            padding-top: 30px;
+        }
+        .tengah{
+            margin-top: 50px;
+            justify-content: start;
+            margin-left: 0;
+        }
+        .companies{
+            margin-top: 75px;
+            justify-content: space-between;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .right{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding-left: 70px;
+    }
+    .pictures{
+        height: 600px;
+        width: 100%;
+        background-image: url("/images/image-hero-desktop.png");
+        background-repeat: no-repeat;
+    }
 }

@@ -7,13 +7,13 @@
   font-family: 'Epilogue', sans-serif;
 }
 
-h1 {
+.left h1 {
   text-align: center;
   font-weight: 700 !important;
   font-size: 35px !important;
 }
 
-p {
+.left p {
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
@@ -58,5 +58,71 @@ p {
   width: 100%;
   background-image: url("/images/image-hero-mobile.png");
   background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1440px) {
+  nav {
+    height: 70px;
+  }
+  nav .menu {
+    margin-left: 25px;
+  }
+  nav .button {
+    text-align: right;
+    padding-left: 650px;
+  }
+  .grid {
+    -ms-grid-columns: 55% 45%;
+        grid-template-columns: 55% 45%;
+    padding: 30px 60px 60px 60px;
+  }
+  .left {
+    padding-top: 100px;
+    padding-left: 70px;
+    padding-right: 50px;
+  }
+  .left h1 {
+    text-align: left;
+    font-size: 85px !important;
+    color: #141414;
+  }
+  .left p {
+    text-align: left;
+    padding: 0;
+    color: dimgray;
+    font-size: 18px;
+    padding-right: 50px;
+    padding-top: 30px;
+  }
+  .left .tengah {
+    margin-top: 50px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-left: 0;
+  }
+  .left .companies {
+    margin-top: 75px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+  }
+  .right {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    padding-left: 70px;
+  }
+  .pictures {
+    height: 600px;
+    width: 100%;
+    background-image: url("/images/image-hero-desktop.png");
+    background-repeat: no-repeat;
+  }
 }
 /*# sourceMappingURL=main.css.map */
