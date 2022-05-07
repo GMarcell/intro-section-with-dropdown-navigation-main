@@ -17,8 +17,64 @@
   </style>
 </head>
 <body>
+
+  <!-- Sidebar -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+      <img src="/images/icon-close-menu.svg" alt="close">
+    </a>
+    <a class="dropdown-btn" onclick="changeImgfeature()">
+      Features
+      <img id="arrowfeature" class="arrow" src="/images/icon-arrow-down.svg" alt="">
+    </a>
+    <div class="dropdown-container">
+      <a href="#">
+        <img src="/images/icon-todo.svg" alt="todo">
+        Todo List
+      </a>
+      <a href="#">
+        <img src="/images/icon-calendar.svg" alt="calender">
+        Calender
+      </a>
+      <a href="#">
+        <img src="/images/icon-reminders.svg" alt="reminders">
+        Reminders
+      </a>
+      <a href="#">
+        <img src="/images/icon-planning.svg" alt="planning">
+        Planning
+      </a>
+    </div>
+    <a class="dropdown-btn" onclick="changeImgcompany()">
+      Company
+      <img id="arrowcompany" class="arrow" src="/images/icon-arrow-down.svg" alt="">
+    </a>
+    <div class="dropdown-container">
+      <a href="#">History</a>
+      <a href="#">Our Team</a>
+      <a href="#">Blog</a>
+    </div>
+    <a href="#">Careers</a>
+    <a href="#">About</a>
+    <div class="tengah">
+      <button href="#" class="loginbtn">Login</button>
+    </div>
+    <div class="tengah">
+      <button href="#" class="registerbtn">Register</button>
+    </div>
+  </div>
+  
+  <!-- Use any element to open the sidenav -->
+  <div class="sidenav-mobile">
+    <img src="/images/logo.svg" alt="logo">
+    <span onclick="openNav()">
+      <img src="/images/icon-menu.svg" alt="menu">
+    </span>
+  </div>
+  <!-- sidebar -->
+
   <!-- NavBar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="/images/logo.svg" alt="logo">
@@ -73,12 +129,12 @@
             <button class="col-12 btn">Login</button>
           </li>
           <li class="nav-item">
-            <button class="col-12 rounded btn btn-outline-success">Register</button>
+            <button class="col-12 rounded btn registerbtn">Register</button>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
   <!-- NavBar -->
 
   <div class="grid">
@@ -115,5 +171,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="/js/main.js"></script>
 </body>
 </html>
