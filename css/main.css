@@ -122,6 +122,10 @@
 }
 
 /* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #141414;
+}
+
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
@@ -139,13 +143,8 @@
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
+.logo {
+  display: none;
 }
 
 .dropdown-btn {
@@ -168,21 +167,11 @@
 }
 
 @media screen and (min-width: 1440px) {
-  nav {
-    height: 70px;
+  .sidenav-mobile {
+    display: none;
   }
-  nav .menu {
-    margin-left: 25px;
-  }
-  nav .button {
-    text-align: right;
-    padding-left: 650px;
-  }
-  nav li {
-    color: dimgray !important;
-  }
-  nav li:hover {
-    color: #141414 !important;
+  .sidenav {
+    width: 250px;
   }
   .grid {
     -ms-grid-columns: 55% 45%;
