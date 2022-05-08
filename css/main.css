@@ -7,223 +7,288 @@
   font-family: 'Epilogue', sans-serif;
 }
 
-.left h1 {
-  text-align: center;
-  font-weight: 700 !important;
-  font-size: 35px !important;
+body {
+  margin: 0;
 }
 
-.left p {
-  text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
-  row-gap: 35px;
-}
-
-.right {
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.tengah {
+.nav-ul {
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.nav-btns button:nth-child(1) {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.nav-btns button:nth-child(2) {
+  outline: none;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  /* margin: 10px; */
+  display: inline;
+  margin: 10px;
+}
+
+.ham {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+h1 {
+  font-size: 70px;
+  width: 500px;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (450px)[2];
+      grid-template-columns: repeat(2, 450px);
+  grid-gap: 80px;
+  margin: 0 auto;
+  max-width: 1200px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.learn-btn {
-  border: none;
-  background-color: #141414;
-  color: #fafafa;
-  padding: 10px 20px 10px 20px;
-  border-radius: 15px;
-}
-
-.pictures {
-  height: 300px;
+.img-container img {
   width: 100%;
-  background-image: url("/images/image-hero-mobile.png");
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
-.loginbtn {
-  border: none;
-  background-color: transparent;
-}
-
-.registerbtn {
-  background-color: transparent;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 60px;
-  padding-left: 60px;
-  border-radius: 10px;
-  border: 1px solid dimgray !important;
-}
-
-.sidenav-mobile {
-  padding: 20px;
+.logos {
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-/* The side navigation menu */
-.sidenav {
-  height: 100%;
-  /* 100% Full-height */
-  width: 0;
-  /* 0 width - change this with JavaScript */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Stay on top */
-  top: 0;
-  /* Stay at the top */
-  right: 0;
-  background-color: #fafafa;
-  /* Black*/
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 60px;
-  /* Place content 60px from the top */
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #818181;
-  display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #141414;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  -webkit-transition: margin-left .5s;
-  transition: margin-left .5s;
-  padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-.logo {
-  display: none;
-}
-
-.dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #141414;
-  display: block;
+.hero button {
+  margin-top: 40px;
   border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
   outline: none;
+  background-color: black;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 15px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.dropdown-container {
+.hero button:hover {
+  background-color: transparent;
+  border: 1px solid black;
+  color: grey;
+  font-family: bold;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  border-radius: 10px;
+  padding: 20px;
   display: none;
-  padding-left: 15px;
+  position: absolute;
+  background-color: #fff;
+  width: 120px;
+  z-index: 2;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (min-width: 1440px) {
-  .sidenav-mobile {
+.dropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* justify-content: space-between; */
+}
+
+.dropdown-content img {
+  margin-right: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    max-width: 960px;
+    -ms-grid-columns: (400px)[2];
+        grid-template-columns: repeat(2, 400px);
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-btns {
     display: none;
   }
-  .sidenav {
-    width: 250px;
+  .nav-ul {
+    display: none;
   }
-  .grid {
-    -ms-grid-columns: 55% 45%;
-        grid-template-columns: 55% 45%;
-    padding: 30px 60px 60px 60px;
-  }
-  .left {
-    padding-top: 100px;
-    padding-left: 70px;
-    padding-right: 50px;
-  }
-  .left h1 {
-    text-align: left;
-    font-size: 85px !important;
-    color: #141414;
-  }
-  .left p {
-    text-align: left;
-    padding: 0;
-    color: dimgray;
-    font-size: 18px;
-    padding-right: 50px;
-    padding-top: 30px;
-  }
-  .left .tengah {
-    margin-top: 50px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    margin-left: 0;
-  }
-  .left .companies {
-    margin-top: 75px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .right {
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 3;
-    padding-left: 70px;
+  .ham {
+    display: block;
   }
-  .pictures {
-    height: 600px;
+  nav {
+    padding: 20px;
+  }
+  .hero {
+    margin: 50px;
+    max-width: 960px;
+    -ms-grid-columns: (350px)[1];
+        grid-template-columns: repeat(1, 350px);
+  }
+  .img-container {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .img-container img {
+    content: url(../images/image-hero-mobile.png);
+    max-width: 100%;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero button {
+    margin: 0;
+  }
+  h1 {
+    font-size: 30px;
+    margin: 0;
     width: 100%;
-    background-image: url("/images/image-hero-desktop.png");
-    background-repeat: no-repeat;
+    text-align: center;
+  }
+  br {
+    display: none;
+  }
+  .overlay {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    top: 0;
+    height: 100vh;
+  }
+  .mobile-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    display: none;
+    width: 180px;
+    height: 100%;
+    /* text-align: right; */
+  }
+  .mobile-nav img {
+    text-align: right;
+  }
+  .overlay {
+    /* display: ; */
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: transparent; */
+  }
+  .show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  a {
+    margin: 0;
+  }
+  .mobile-nav-con {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    /* text-align: left; */
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .mobile-nav-con > * {
+    padding: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
