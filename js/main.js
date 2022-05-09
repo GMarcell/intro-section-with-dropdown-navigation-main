@@ -1,12 +1,27 @@
-const ham = document.querySelector('.ham')
-
-  ham.addEventListener('click', e=>{
-    document.querySelector('.mobile-nav').classList.add('show')
-    document.querySelector('.overlay').style.display = 'block'
-    document.querySelector('body').classList.add('lock')
+$(document).ready(function(){
+  var state = false,
+      links = $('.navbar-responsive__link')
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+    if(!state) {
+      $('.navbar-responsive').css("transform", "translate3d(0,0,0)")
+      state = true
+    } else {
+      $('.navbar-responsive').css("transform", "translate3d(-100%,0,0)")
+      state = false
+    }
+    
+	})
+  $.each(links, function(index,value){
+    value.addEventListener("click",function(){
+      if(!state) {
+        $('.navbar-responsive').css("transform", "translate3d(0,0,0)")
+        state = true
+      } else {
+        $('.navbar-responsive').css("transform", "translate3d(-100%,0,0)")
+        state = false
+      }
+      $('#nav-icon3').removeClass('open')
+    })
   })
-  document.querySelector('#close-Menu').addEventListener('click', e =>{
-    document.querySelector('.mobile-nav').classList.remove('show')
-    document.querySelector('.overlay').style.display = 'none'
-    document.querySelector('body').classList.remove('lock')
-  })
+})
