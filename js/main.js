@@ -7,7 +7,7 @@ $(document).ready(function(){
       $('.navbar-responsive').css("transform", "translate3d(0,0,0)")
       state = true
     } else {
-      $('.navbar-responsive').css("transform", "translate3d(-100%,0,0)")
+      $('.navbar-responsive').css("transform", "translate3d(100%,0,0)")
       state = false
     }
     

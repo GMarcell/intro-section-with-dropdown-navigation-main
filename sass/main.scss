@@ -15,16 +15,16 @@ $Almost-Black: hsl(0, 0%, 8%);
   position  : absolute;
   height    : 100%;
   width     : 100%;
-  transform : translate3d(-100%,0,0);
+  transform : translate3d(100%,0,0);
   transition: .3s all ease-in-out;
   &:after {
     content : "";
     z-index : -1;
-    left    : 0;
+    right    : 0;
     position: absolute;
     height  : 100%;
-    width   : 100%;
-    background-color: rgba(0,0,0,.8);
+    width   : 50%;
+    background-color:black;
   }
   .navbar-responsive__nav {
     display       : flex;
@@ -186,7 +186,7 @@ $Almost-Black: hsl(0, 0%, 8%);
   left : 50%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375PX) {
   .navbar__nav {
     display: none !important;
   }
@@ -196,7 +196,7 @@ $Almost-Black: hsl(0, 0%, 8%);
   }
 }
 
-@media(min-width: 768px) {
+@media(min-width: 375px) {
   .navbar__responsive {
     transform: translate3d(-100%,0,0) !important;
   }
